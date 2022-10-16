@@ -75,7 +75,7 @@ const App = () => {
             {categories.map((category) => (
               <Nav.Item key={category}>
                 <Link
-                  to={`/search?category=${category}`}
+                  to={"/search?category="+category}
                   onClick={() => setSidebarIsOpen(false)}
                 >
                   <Nav.Link className="navbar-text-color">{category}</Nav.Link>
