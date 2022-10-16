@@ -10,7 +10,7 @@ import Header from "./Header";
 import Shipping from "pages/Shipping";
 import Signup from "pages/Signup";
 import ProfilePage from "pages/ProfilePage";
-import { LinkContainer } from "react-router-bootstrap/LinkContainer";
+import { LinkContainer } from "react-router-bootstrap";
 import axios from "axios";
 import { getError } from "../utils";
 import SearchScreen from "pages/SearchPage";
