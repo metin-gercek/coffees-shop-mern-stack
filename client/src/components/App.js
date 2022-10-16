@@ -10,7 +10,7 @@ import Header from "./Header";
 import Shipping from "pages/Shipping";
 import Signup from "pages/Signup";
 import ProfilePage from "pages/ProfilePage";
-import { LinkContainer } from "react-router-bootstrap";
+//import { LinkContainer } from "react-router-bootstrap/LinkContainer";
 import axios from "axios";
 import { getError } from "../utils";
 import SearchScreen from "pages/SearchPage";
@@ -28,7 +28,7 @@ import OrderPageUser from "pages/OrderPageUser";
 import OrderHistory from "pages/OrderHistory";
 import SearchBox from "./SearchBox";
 import AdminOrderList from "pages/AdminOrderList";
-//import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 
 const App = () => {
@@ -74,12 +74,12 @@ const App = () => {
             </Nav.Item>
             {categories.map((category) => (
               <Nav.Item key={category}>
-                <LinkContainer
-                  to={"/search?category="+category}
+                <Link
+                  to={`/search?category=${category}`}
                   onClick={() => setSidebarIsOpen(false)}
                 >
                   <Nav.Link className="navbar-text-color">{category}</Nav.Link>
-                </LinkContainer>
+                </Link>
               </Nav.Item>
             ))}
             <SearchBox />
