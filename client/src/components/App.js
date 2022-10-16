@@ -48,7 +48,6 @@ const App = () => {
     };
     fetchCategories();
   }, []);
-  console.log(categories.map((category)=> console.log(`/search?category=${category}`)))
   return (
     <BrowserRouter>
       <ToastContainer position="bottom-center" limit={1} />
@@ -76,7 +75,7 @@ const App = () => {
             {categories.map((category) => (
               <Nav.Item key={category}>
                 <Link
-                  to={`/search?category=${category}`}
+                  to={"/search?category="+category}
                   onClick={() => setSidebarIsOpen(false)}
                 >
                   <Nav.Link className="navbar-text-color">{category}</Nav.Link>

@@ -176,7 +176,7 @@ export default function SearchScreen() {
                   Any
                 </Link>
               </li>
-              {prices?.map((p) => (
+              {prices.map((p) => (
                 <li key={p.value}>
                   <Link
                     to={getFilterUrl({ price: p.value })}
@@ -191,7 +191,7 @@ export default function SearchScreen() {
           <div>
             <h3>Avg. Customer Review</h3>
             <ul>
-              {ratings?.map((r) => (
+              {ratings.map((r) => (
                 <li key={r.name}>
                   <Link
                     to={getFilterUrl({ rating: r.rating })}
