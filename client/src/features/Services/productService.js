@@ -7,7 +7,7 @@ const API_URL = "/api/v1/products/";
 //get all products
 const productsFetch = async () => {
   try {
-    const result = await axios.get(API_URL);
+    const result = await axios.get("/api/v1/products");
     return result?.data;
   } catch (error) {
     toast.error(getError(error));

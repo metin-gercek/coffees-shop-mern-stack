@@ -1,0 +1,21 @@
+{
+  "name": "coffees-shop-mern-stack",
+  "version": "1.0.0",
+  "description": "Choose between 2 topics provided in the REST API Slides",
+  "main": "index.js",
+  "scripts": {
+	"build": "cd api && npm install  && cd ../client && npm install && npm run build",
+	"start": "node api/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/metin-gercek/coffees-shop-mern-stack.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/metin-gercek/coffees-shop-mern-stack/issues"
+  },
+  "homepage": "https://github.com/metin-gercek/coffees-shop-mern-stack#readme"
+}
