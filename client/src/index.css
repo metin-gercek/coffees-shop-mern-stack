@@ -39,7 +39,9 @@ body {
 	border: 1px #EE645B solid;
 	margin: 1rem;
 	height: 100%;
-
+}
+.productButton {
+	margin-bottom: 20px;
 }
 
 .product img {
