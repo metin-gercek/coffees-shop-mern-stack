@@ -7,6 +7,8 @@ import productRouter from "./routes/productRoutes.js";
 import userRouter from "./routes/userRoutes.js";
 import orderRouter from "./routes/orderRoutes.js";
 import path from 'path'
+const cors = require('cors')
+
 
 dotenv.config();
 mongoose
@@ -19,6 +21,7 @@ mongoose
   });
 
 const app = express();
+app.use(cors());
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
